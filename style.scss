@@ -129,13 +129,18 @@ nav{
     padding: 1rem;
     .heading{
         margin: 2rem 0;
-        text-align: left;
+        text-align: center;
+        font-weight: bold;
     }
 }
 .events{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+
+    i{
+        margin-bottom: 0.3rem;
+    }
     
     .event-container{
         background: darken(rgba(202, 202, 124, 0.8),20%);
@@ -162,6 +167,8 @@ nav{
 
     p{
         margin-bottom: 1rem;
+        text-align: center;
+        font-weight: bold;
     }
 
 }
@@ -173,13 +180,14 @@ nav{
     .member{
         box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.5);
         border-radius: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
         
     }
-    img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    }
+    
 }
 
 footer{
@@ -243,3 +251,4 @@ footer{
 }
 
 @import 'mobile';
+@import 'desktop';
